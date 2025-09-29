@@ -3,6 +3,6 @@
 
 void functionsHello() {
 
-	printf("Hello\n");
+	printf("Hello darkness, my old friend\n");
 
 }
