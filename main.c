@@ -6,6 +6,12 @@ int main() {
 
 	functionsHello();
 
+	for (int i = 0; i <= 4; i++) {
+
+		printf("Yo\n");
+
+	}
+
 	return 0;
 
 }
