@@ -15,5 +15,4 @@ void anotherHelloFour() {
 void newHelloFour() {
 
 	printf("Yoooo");
-
 }
