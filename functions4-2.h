@@ -11,3 +11,9 @@ void anotherHelloFour() {
 	printf("newhello")
 
 }
+
+void newHelloFour() {
+
+	printf("Yoooo");
+
+}
