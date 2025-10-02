@@ -12,7 +12,7 @@ int main() {
 
 	functionsHello();
 
-	for (int i = 0; i <= 19; i++) {
+	for (int i = 0; i <= 18; i++) {
 
 		printf("Yo\n");
 
