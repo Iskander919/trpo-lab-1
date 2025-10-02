@@ -5,7 +5,7 @@
 
 void hellowTwo() {
 
-	printf("Heelo Two\n");
+	printf("Heelo Two Yooooo\n");
 
 }
 
