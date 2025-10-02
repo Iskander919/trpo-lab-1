@@ -4,7 +4,7 @@
 
 void doSomething() {
 
-	printf("DDD\");
+	printf("DDDDDDDD\");
 
 }
  
@@ -12,7 +12,7 @@ int main() {
 
 	functionsHello();
 
-	for (int i = 0; i <= 5; i++) {
+	for (int i = 0; i <= 19; i++) {
 
 		printf("Yo\n");
 
