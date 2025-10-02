@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 
-
+//some comment
 int main() {
 
 	functionsHello();
