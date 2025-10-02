@@ -4,7 +4,8 @@
 
 void doSomething() {
 
-	printf("DDDDDDDD\");
+	printf("DDDDDDDD\n");
+	printf("Something\n");
 
 }
  
