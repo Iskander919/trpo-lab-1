@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include "functions.h"
 #include <stdlib.h>
+
+void doSomething() {
+
+	printf("DDD\");
+
+}
  
 int main() {
 
