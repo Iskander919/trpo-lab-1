@@ -20,6 +20,8 @@ int main() {
 
 	}
 
+	int num = 10/1;
+
 	return 0;
 
 }
