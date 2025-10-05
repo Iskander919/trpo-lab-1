@@ -21,8 +21,7 @@ int main() {
 	}
 
 	int num = 10/0;
-	int anotherNum = 10/2;
-
+	
 	return 0;
 
 }
