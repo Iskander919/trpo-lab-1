@@ -20,7 +20,7 @@ int main() {
 
 	}
 
-	int num = 10/4;
+	int num = 10/0;
 
 	return 0;
 
