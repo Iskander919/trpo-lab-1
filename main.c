@@ -11,19 +11,8 @@ void doSomething() {
  
 int main() {
 
-	functionsHello();
+	printf("Yo\n");
 
-	for (int i = 0; i <= 25; i++) {
-
-
-		printf("Yooooo\n");
-
-	}
-
-	
-	int someNum = 10/3;
-
-	int aNum = 10/4;
 
 	return 0;
 
