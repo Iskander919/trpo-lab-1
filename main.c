@@ -24,6 +24,8 @@ int main() {
 	
 	int someNum = 10/3;
 
+	int aNum = 10/4;
+
 	return 0;
 
 }
