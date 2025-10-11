@@ -15,6 +15,6 @@ int main() {
 	printf("Yo\n");
 
 
-	return 0;
+	return 1;
 
 }
