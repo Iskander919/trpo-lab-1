@@ -12,7 +12,7 @@ void doSomething() {
  
 int main() {
 
-	printf("Yo\n");
+	printf("Yooo\n");
 
 
 	return 1;
