@@ -1,6 +1,6 @@
 name: The workflow of Iskander's project                                         # Название проекта
 on: [push] # Срабатывание workflow при каждом пуше
-run-name: commit ${{ github.sha.substr(0,7) }} triggered by @${{ github.actor }} # Имя для идентификации запуска - 
+run-name: commit ${{ github.sha }} triggered by @${{ github.actor }} # Имя для идентификации запуска - 
                                                                                  # содержит имя автора и SHA коммита
 
 jobs:
