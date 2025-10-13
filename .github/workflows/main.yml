@@ -2,9 +2,15 @@ name: The workflow of Iskander's project                                        
 on: [push] # Срабатывание workflow при каждом пуше
 run-name: commit ${{ github.sha }} triggered by @${{ github.actor }} # Имя для идентификации запуска - 
                                                                                  # содержит имя автора и SHA коммита
-
 jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "A push was made"                                               # сообщение при каждом пуше
+      - run: echo "A push was made" # сообщение при каждом пуше
+      - name: C/C++ CI
+        uses: aminya/setup-cpp@v1.7.1
+        with:
+          compiler: gcc
+          cmake: true
+          ninja: true
+          vcpkg: true
