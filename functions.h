@@ -1,6 +1,10 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
-void functionsHello();
+class BankAccount {
+public:
+  int money = 0;
+  
+};
 
 #endif

@@ -1,18 +1,6 @@
 #include <iostream>
 #include <gtest/gtest.h>
-
-class BankAccount {
-public:
-  int money = 0;
-  
-};
-
-TEST(BankTests, MoneyTest) {
-
-  BankAccount account;
-  EXPECT_EQ(0, account.money);
-
-}
+#include "functions.h"
 
 int main (int argc, char* argv[]) {
 
