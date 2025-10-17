@@ -20,7 +20,7 @@ jobs:
         sudo cp lib/*.a /usr/lib
 
     - name: Building proj
-      run: g++ main.cpp tests/unit_test.cpp -o main -lgtest -lgtest_main -pthread
+      run: g++ main.cpp test/unit_test.cpp -o main -lgtest -lgtest_main -pthread
 
     - name: Run tests
       run: ./main
