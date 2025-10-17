@@ -3,7 +3,7 @@
 
 class BankAccount {
 public:
-  int money = 0;
+  int money = 1;
   
 };
 
