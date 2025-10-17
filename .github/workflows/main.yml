@@ -1,16 +1,26 @@
 name: The workflow of Iskander's project                                         # Название проекта
-on: [push] # Срабатывание workflow при каждом пуше
+on: [push, pull_request] # Срабатывание workflow при каждом пуше
 run-name: commit ${{ github.sha }} triggered by @${{ github.actor }} # Имя для идентификации запуска - 
                                                                                  # содержит имя автора и SHA коммита
 jobs:
   testing:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "A push was made" # сообщение при каждом пуше
-      - name: C/C++ CI
-        uses: aminya/setup-cpp@v1.7.1
-        with:
-          compiler: gcc
-          cmake: true
-          ninja: true
-          vcpkg: true
+    - name: Clone repo on virtual machine
+      uses: actions/checkout@v4
+    
+    
+    - name: Install gtest
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y libgtest-dev
+        cd usr/src/gtest
+        sudo cmake .
+        sudo make
+        sudo cp lib/*.a usr/lib
+
+    - name: Building proj
+      run: g++ main.cpp tests/unit_test.cpp -o main -lgtest -lgtest_main -pthread
+
+    - name: Run tests
+      run: ./main
