@@ -11,7 +11,7 @@ public:
 
 class BankClient {
 public:
-  std::string clientName = "Defauult";
+  std::string clientName = "Default";
    
 };
 
