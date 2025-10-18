@@ -8,7 +8,7 @@ TEST(BankTest, MoneyTest) {
 
 }
 
-TEST(UserTest, NameTest) {
+TEST(ClientsTest, NameTest) {
 
   BankClient client;
   EXPECT_EQ("Default", client.clientName);
