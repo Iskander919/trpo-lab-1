@@ -7,3 +7,10 @@ TEST(BankTest, MoneyTest) {
   EXPECT_EQ(0, account.money);
 
 }
+
+TEST(UserTest, NameTest) {
+
+  BankClient client;
+  EXPECT_EQ("Default", client.clientName);
+
+}
