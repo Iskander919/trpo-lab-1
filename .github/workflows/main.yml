@@ -28,4 +28,4 @@ jobs:
       run: ./main
 
     - name: Compile documentation
-      run: sphinx build -M html /doc /doc
+      run: sphinx-build -M html /doc /doc
