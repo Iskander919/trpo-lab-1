@@ -24,3 +24,6 @@ jobs:
 
     - name: Run tests
       run: ./main
+
+    - name: Compile documentation
+      run: Sphinx build -M html /doc /doc
