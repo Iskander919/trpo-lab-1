@@ -10,10 +10,12 @@ jobs:
       uses: actions/checkout@v4
     
     
-    - name: Install gtest
+    - name: Install gtest and sphinx
       run: |
         sudo apt-get update
         sudo apt-get install -y libgtest-dev
+        sudo apt-get install -y python3-pip
+        sudo apt-get install -y python3-sphinx
         cd /usr/src/gtest
         sudo cmake .
         sudo make
@@ -26,4 +28,4 @@ jobs:
       run: ./main
 
     - name: Compile documentation
-      run: Sphinx build -M html /doc /doc
+      run: sphinx build -M html /doc /doc
