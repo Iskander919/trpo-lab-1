@@ -4,7 +4,7 @@
 
 int main (int argc, char* argv[]) {
 
-  std::cout << "Yo, test proj" << std::endl;
+  std::cout << "Yoooo, test proj" << std::endl;
 
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();
