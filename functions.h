@@ -5,7 +5,7 @@
 
 class BankAccount {
 public:
-  int money = 1;
+  int money = 0;
   
 };
 
