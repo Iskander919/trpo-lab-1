@@ -1,5 +1,5 @@
 name: The workflow of Iskander's project                                         # Название проекта
-on: [push, pull_request] # Срабатывание workflow при каждом пуше
+on: [push, pull_request, merge_group] # Срабатывание workflow при каждом пуше
 run-name: commit ${{ github.sha }} triggered by @${{ github.actor }} # Имя для идентификации запуска - 
                                                                                  # содержит имя автора и SHA коммита
 jobs:
